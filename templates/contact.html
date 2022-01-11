@@ -1,0 +1,43 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Fitness Freak Gym</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--First div for logo-->
+        <div class="left">
+            <img src="{% static 'images/silhouette-g62e1e9238_1280.png' %}" alt="logo">
+            <div>Fitness Freak</div>
+        </div>
+        <!--Second div for navigations-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/about.html">About us</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <!--Third div for buttons-->
+        <div class="right">
+            <button class="btn">Join now</button>
+            <button class="btn">Follow us on</button>
+        </div>
+    </header>
+    <div class="container1">
+        <h2 class="abt">Contact us</h2>
+        <p class="para1">Hey, You can contact us any time. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vel. Hic adipisci odio animi ea accusantium
+            saepe facere, repudiandae commodi tenetur sit velit quia autem deserunt dolorem illo dicta at fugit, ratione
+            fugiat. Distinctio?</p>
+    </div>
+</body>
+
+</html>

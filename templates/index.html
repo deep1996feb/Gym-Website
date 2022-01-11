@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Fitness Freak Gym</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--First div for logo-->
+        <div class="left">
+            <img src="{% static 'images/silhouette-g62e1e9238_1280.png' %}" alt="logo">
+            <div>Fitness Freak</div>
+        </div>
+        <!--Second div for navigations-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <!--Third div for buttons-->
+        <div class="right">
+            <button class="btn">Join now</button>
+            <button class="btn">Follow us on</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join one of the best Gym in Delhi.</h2>
+        <form method="post" action="/">
+            {% csrf_token %}
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="age" name="age" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="moblie" name="mobile" placeholder="Enter your mobile no.">
+            </div>
+            <div class="form-group">
+                <input type="address" name="addresse" placeholder="Enter your address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+        <h2>Please submit the form.</h2>
+    </div>
+</body>
+
+</html>
